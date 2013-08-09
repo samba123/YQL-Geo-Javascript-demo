@@ -1,0 +1,11 @@
+<html>
+<body>
+<pre><code>yqlgeo.get('bangalore,in',function(o){
+  alert(o.place.name+' ('+
+    o.place.centroid.latitude+','+
+    o.place.centroid.longitude+
+  ')');
+})</code></pre>
+<button onclick="yqlgeo.get('bangalore,in',function(o){alert(o.place.name+' ('+o.place.centroid.latitude+','+o.place.centroid.longitude+')');})">Try this out</button>
+<script src="yqlgeo.js"></script>
+</body></html>
